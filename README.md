@@ -1,79 +1,104 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+```markdown
+# CatTinder
 
-# Getting Started
+CatTinder is a React Native application that allows users to browse and interact with cat profiles. This README provides an overview of the project structure, setup instructions, and testing procedures.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Project Overview
 
-## Step 1: Start the Metro Server
+CatTinder is built using React Native 0.75.3 and utilizes various libraries for navigation, state management, and UI components. The project is set up with TypeScript for type safety and Jest for unit testing.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Getting Started
 
-To start Metro, run the following command from the _root_ of your React Native project:
+### Prerequisites
 
-```bash
-# using npm
-npm start
+- Node.js (>=18)
+- npm or yarn
+- React Native CLI
+- Xcode (for iOS development)
+- Android Studio (for Android development)
 
-# OR using Yarn
-yarn start
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+   or
+   ```
+   yarn install
+   ```
+
+3. Set up environment variables:
+   Create a `.env` file in the root directory and add your API key:
+   ```
+   CATS_API_KEY=your_api_key_here
+   ```
+
+### Running the App
+
+To start the app, run the following commands:
+
+For iOS:
 ```
-
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
 npm run ios
-
-# OR using Yarn
-yarn ios
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+For Android:
+```
+npm run android
+```
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+## Project Structure
 
-## Step 3: Modifying your App
+The main components of the project are:
 
-Now that you have successfully run the app, let's modify it.
+- `src/App.tsx`: The main application component
+- `src/components/`: Contains reusable components like Card and Toogle
+- `__tests__/`: Contains unit tests for components
+- `__mocks__/`: Contains mock files for testing
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+## Testing
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+The project uses Jest and React Native Testing Library for unit testing. To run the tests, use the following command:
 
-## Congratulations! :tada:
+```
+npm test
+```
 
-You've successfully run and modified your React Native App. :partying_face:
+or
 
-### Now what?
+```
+yarn test
+```
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+### Test Files
 
-# Troubleshooting
+1. Card Component Test:
+```typescript:__tests__/card.test.tsx
+startLine: 1
+endLine: 31
+```
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+2. Toogle Component Test:
+```typescript:__tests__/toogle.test.tsx
+startLine: 1
+endLine: 34
+```
 
-# Learn More
+### Jest Configuration
 
-To learn more about React Native, take a look at the following resources:
+The Jest configuration can be found in:
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+```javascript:jest.config.js
+startLine: 1
+endLine: 11
+```
+
+## Key Dependencies
+
+For a full list of dependencies and dev dependencies, refer to the `package.json` file.
+
+## Contributing
+
+Please read the CONTRIBUTING.md file (if available) for details on our code of conduct and the process for submitting pull requests.
