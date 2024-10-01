@@ -1,11 +1,9 @@
-import React from 'react';
-import { Alert } from 'react-native';
+import { Alert } from 'react-native'
 
-import { fireEvent, render, waitFor } from '@testing-library/react-native';
+import { fireEvent, render, waitFor } from '@testing-library/react-native'
 
-import Toogle from '../src/components/Toogle/toogle';
+import Toogle from '../src/components/Toogle/toogle'
 
-// Mockando react-native-config
 jest.mock('react-native-config', () => ({
   CATS_API_KEY: 'test_api_key',
 }));
