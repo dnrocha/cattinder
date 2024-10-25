@@ -1,104 +1,76 @@
-```markdown
-# CatTinder
+## CatTinder
 
-CatTinder is a React Native application that allows users to browse and interact with cat profiles. This README provides an overview of the project structure, setup instructions, and testing procedures.
+CatTinder é um aplicativo React Native que permite aos usuários navegar e interagir com perfis de gatos. Este README fornece instruções detalhadas sobre como configurar, instalar e executar o projeto, além de informações sobre testes.
 
-## Project Overview
+![Android Screenshot](./src/assets/images/android.gif)
 
-CatTinder is built using React Native 0.75.3 and utilizes various libraries for navigation, state management, and UI components. The project is set up with TypeScript for type safety and Jest for unit testing.
+## Visão Geral do Projeto
 
-## Getting Started
+CatTinder é construído usando React Native 0.75.3 e utiliza várias bibliotecas para navegação, gerenciamento de estado e componentes de UI. O projeto está configurado com TypeScript para segurança de tipos e Jest para testes unitários.
 
-### Prerequisites
+## Pré-requisitos
 
 - Node.js (>=18)
-- npm or yarn
-- React Native CLI
-- Xcode (for iOS development)
-- Android Studio (for Android development)
+- npm
+- React Native
+- Redux Toolkit
+- Jest / React Native Testing Library
+- Axios
+- RN Swiper List
+- Typescript
 
-### Installation
+## Instalação
 
-1. Clone the repository
-2. Install dependencies:
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/yourusername/CatTinder.git
+   cd CatTinder
    ```
+
+2. Instale as dependências:
+   ```bash
    npm install
    ```
-   or
-   ```
-   yarn install
-   ```
 
-3. Set up environment variables:
-   Create a `.env` file in the root directory and add your API key:
-   ```
+3. Configure as variáveis de ambiente:
+   Crie um arquivo `.env` no diretório raiz e adicione sua chave de API:
+   ```env
    CATS_API_KEY=your_api_key_here
    ```
 
-### Running the App
+## Executando o Aplicativo
 
-To start the app, run the following commands:
+Para iniciar o aplicativo, execute os seguintes comandos:
 
-For iOS:
-```
+Para iOS:
+```bash
 npm run ios
 ```
 
-For Android:
-```
+Para Android:
+```bash
 npm run android
 ```
+## Testes
 
-## Project Structure
+O projeto usa Jest e React Native Testing Library para testes unitários. Para executar os testes, use o seguinte comando:
 
-The main components of the project are:
-
-- `src/App.tsx`: The main application component
-- `src/components/`: Contains reusable components like Card and Toogle
-- `__tests__/`: Contains unit tests for components
-- `__mocks__/`: Contains mock files for testing
-
-## Testing
-
-The project uses Jest and React Native Testing Library for unit testing. To run the tests, use the following command:
-
-```
+```bash
 npm test
 ```
 
-or
+## Dependências Principais
 
-```
-yarn test
-```
+Para uma lista completa de dependências e dependências de desenvolvimento, consulte o arquivo `package.json`.
 
-### Test Files
+## Contribuindo
 
-1. Card Component Test:
-```typescript:__tests__/card.test.tsx
-startLine: 1
-endLine: 31
-```
+Por favor, leia o arquivo CONTRIBUTING.md (se disponível) para detalhes sobre nosso código de conduta e o processo para enviar pull requests.
 
-2. Toogle Component Test:
-```typescript:__tests__/toogle.test.tsx
-startLine: 1
-endLine: 34
-```
+## Capturas de Tela
 
-### Jest Configuration
+### iOS
+![iOS Screenshot](./src/assets/images/ios.png)
 
-The Jest configuration can be found in:
-
-```javascript:jest.config.js
-startLine: 1
-endLine: 11
-```
-
-## Key Dependencies
-
-For a full list of dependencies and dev dependencies, refer to the `package.json` file.
-
-## Contributing
-
-Please read the CONTRIBUTING.md file (if available) for details on our code of conduct and the process for submitting pull requests.
+### Android
+![Android Screenshot](./src/assets/images/android.gif)
